@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 
 /**
@@ -9,6 +9,18 @@ import './App.css'
  */
 function App() {
   const [ count, setCount ] = useState(0)
+
+  /**
+   * useEffect 页面初始渲染就会执行 相当于cpmponentDidMount
+   * useEffect 有return值，React将会在执行清除操作时调用它
+   */
+  useEffect(() => {
+    console.log(`useEffect=>You clicked ${count} times`)
+    return () => {
+      console.log('============')
+    }
+  }, [count]) //当count发生改变时，就会执行useEffect
+
   return (
     <div className="App">
       <p>You clicked { count } times</p>
