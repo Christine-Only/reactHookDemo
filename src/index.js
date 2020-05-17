@@ -4,11 +4,12 @@ import ReactDOM from 'react-dom'
 // import Counter from './pages/Counter'
 // import UseContext from './pages/UseContext'
 // import UseReducer from './pages/UseReducer'
-import ModifyColor from './pages/modifyColor/ModifyColor'
+// import ModifyColor from './pages/modifyColor/ModifyColor'
+import UseMemo from './pages/UseMemo'
 
 ReactDOM.render(
   <React.StrictMode>
-    <ModifyColor />
+    <UseMemo />
   </React.StrictMode>,
   document.getElementById('root')
 )
