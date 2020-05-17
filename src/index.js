@@ -1,15 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 // import App from './App'
-// import Counter from './pages/Counter'
+import Counter from './pages/Counter'
+// import UseState from './pages/UseState'
+// import UseEffect from './pages/UseEffectDemo'
 // import UseContext from './pages/UseContext'
 // import UseReducer from './pages/UseReducer'
 // import ModifyColor from './pages/modifyColor/ModifyColor'
-import UseMemo from './pages/UseMemo'
+// import UseMemo from './pages/UseMemo'
+// import UseRef from './pages/UseRef'
+import UseNumber from './pages/UseNumber'
 
 ReactDOM.render(
   <React.StrictMode>
-    <UseMemo />
+    <UseNumber />
   </React.StrictMode>,
   document.getElementById('root')
 )

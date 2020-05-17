@@ -1,3 +1,5 @@
+import React, { Component } from 'react'
+
 import React, { useState, useEffect } from 'react'
 import './App.css'
 
@@ -7,7 +9,8 @@ import './App.css'
  * 第二个修改state的函数
  * 0表示count初始值
  */
-function App() {
+const UseEffect = () => {
+  // 这里可以任意命名，因为返回的是数组，数组解构
   const [ count, setCount ] = useState(0)
 
   /**
@@ -29,4 +32,4 @@ function App() {
   )
 }
 
-export default App
+export default UseEffect

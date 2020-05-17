@@ -1,12 +1,18 @@
 import React, { useState, createContext, useContext } from 'react'
 
 const Context = React.createContext()
-
 const Counter = () => {
   const count = useContext(Context)
   return <h2>{count}</h2>
 }
 
+// const Counter = () => {
+//   return (
+//     <Context.Consumer>
+//       {value => <h2>{value}</h2>}
+//     </Context.Consumer>
+//   )
+// }
 const UseContext = () => {
   const [ count, setCount ] = useState(0)
   return (
