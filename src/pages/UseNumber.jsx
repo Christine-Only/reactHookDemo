@@ -2,10 +2,14 @@ import React, { useEffect, useState } from 'react'
 
 function useNumber() {
   let [number, setNumber] = useState(0)
+  console.log("Get a new number " + number)
   useEffect(() => {
-    setInterval(() => {
+    console.log("Timer created")
+    let timerId = setInterval(() => {
       setNumber(number => number + 1)
+      console.log(`set number ${number}`)
     }, 1000)
+    console.log('timerID', timerId)
   }, [])
   return [number, setNumber]
 }
@@ -14,9 +18,9 @@ const Counter1 = () => {
   let [number, setNumber] = useNumber()
   return (
     <div>
-      <button onClick={() => {
-        setNumber(number + 1)
-      }}>{number}</button>
+      <button onClick={() => { setNumber(number + 1) }}>
+        {number}
+      </button>
     </div>
   )
 }
@@ -24,9 +28,8 @@ const Counter2 = () => {
   let [number, setNumber] = useNumber()
   return (
     <div>
-      <button onClick={() => {
-        setNumber(number + 1)
-      }}>{number}</button>
+      <button onClick={() => { setNumber(number + 1) }}>{number}
+      </button>
     </div>
   )
 }

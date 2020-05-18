@@ -12,7 +12,7 @@ const UseState = () => {
   return (
     <>
       <p>You clicked { count } times</p>
-      <button onClick={() => setCount(count + 1)}>Clicked me</button>
+      <button onClick={() => setCount(count => count + 1)}>Clicked me</button>
     </>
   )
 }
