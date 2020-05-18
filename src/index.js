@@ -9,11 +9,12 @@ import Counter from './pages/Counter'
 // import ModifyColor from './pages/modifyColor/ModifyColor'
 // import UseMemo from './pages/UseMemo'
 // import UseRef from './pages/UseRef'
-import UseNumber from './pages/UseNumber'
+// import UseNumber from './pages/UseNumber'
+import UseLayOutEffect from './pages/UseLayOutEffect'
 
 ReactDOM.render(
   <React.StrictMode>
-    <UseNumber />
+    <UseLayOutEffect />
   </React.StrictMode>,
   document.getElementById('root')
 )
